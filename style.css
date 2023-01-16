@@ -68,4 +68,6 @@ body{
 #header{
     display: grid;
     grid-template: 80px 100px / 700px 1fr;
+    align-items: center;
 }
+
