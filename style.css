@@ -18,7 +18,7 @@ body{
 #container{
     height:100%;
     display:grid;
-    grid-template: 150px 1fr / 250px 1fr;
+    grid-template: 180px 1fr / 250px 1fr;
 }
 
 /* grid layout */
@@ -62,4 +62,10 @@ body{
 .sidebar-wrap img{
     max-width:90%;
     max-height:90%;
+}
+
+/*Header*/
+#header{
+    display: grid;
+    grid-template: 80px 100px / 700px 1fr;
 }
