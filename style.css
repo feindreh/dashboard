@@ -37,3 +37,26 @@ body{
     border: solid black 2px;
     background-color: rgb(97, 160, 95);
 }
+
+/*Sidebar*/
+#sidebar-header{
+    display: grid;
+    grid-template: 1fr / 1fr 5fr;
+    align-items:center;
+    margin:10px;
+}
+
+.sidebar-wrap{
+    display: grid;
+    grid-template: repeat(10,1fr) 10fr / 1fr 5fr;
+    align-items: center;
+    grid-gap:5px;
+    margin-left:20px;
+}
+.sidebar-wrap div{
+    padding-left:10px;
+}
+.sidebar-wrap img{
+    max-width:90%;
+    max-height:90%;
+}
