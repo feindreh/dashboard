@@ -21,7 +21,7 @@ body{
     grid-template: 180px 1fr / 250px 1fr;
     font-family: Arial, Helvetica, sans-serif;
 }
-img{
+#sidebar img{
     -webkit-filter:invert(100%);
     filter:progid:DXImageTransform.Microsoft.BasicImage(invert='1');
 }
@@ -29,17 +29,12 @@ img{
 /* grid layout */
 #header{
     grid-area: 1 / 2 / 2 / 3;
-    border: solid black 2px;
-    background-color: cadetblue;
 }
 #sidebar{
     grid-area: 1 / 1 / 3 / 2;
-    border: solid black 2px;
-    background-color: rgb(149, 95, 160);
 }
 #main-content{
     grid-area: 2 / 2 / 3 / 3;
-    border: solid black 2px;
     background-color: rgb(97, 160, 95);
 }
 
@@ -71,8 +66,9 @@ img{
     padding-left:5px;
 }
 .sidebar-wrap img{
-    max-width:95%;
-    max-height:95%;
+    max-width:90%;
+    max-height:90%;
+    padding:5%;
 }
 
 /*Header*/
@@ -80,5 +76,73 @@ img{
     display: grid;
     grid-template: 80px 100px / 700px 1fr;
     align-items: center;
+    margin
 }
+/*input-wrap*/
+#input-wrap{
+    display: grid;
+    align-items: center;
+    grid-template: 1fr / 50px 1fr;
+    padding:20px;
+}
+#input-wrap img{
+    max-width:90%;
+    max-height:90%;
+    padding:5%;
+}
+#input-wrap input{
+    border-radius: 30px;
+    border:none;
+    background-color: rgb(206, 210, 216);
+    height:60%;
+    font-size: 20px;
+    margin-left:30px;
+    padding-left:30px;
+}
+/*header header*/
+#header-header{
+    display:flex;
+    align-items: center;
+    gap:15px;
+    justify-content: flex-end;
+    margin-right:30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+/*profile*/
+#profile{
+    display:grid;
+    grid-template: 1fr / 1fr 5fr;
+}
+#profile img{
+    grid-area: 1/1/3/2;
+    margin-left:auto;
+    margin-right:15px;
+}
+#profile div:nth-child(2){
+    font-size: 16px;
+    font-weight: bold;
+}
+#profile div:nth-child(3){
+    font-size: 24px;
+    font-weight: bold;
+}
+/*button*/
 
+#button{
+    display:flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-end;
+    margin-right:30px;
+}
+.button{
+    background-color: rgb(33, 136, 233);
+    border-radius: 20px;
+    color:white;
+    padding:10px 20px 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 80px;
+    text-align: center;
+}
